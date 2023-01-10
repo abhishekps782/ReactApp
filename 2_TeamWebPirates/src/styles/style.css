@@ -8,7 +8,7 @@ html {
 * {
     margin: 0px;
 }
-
+/* main container styles */
 .main-container {
     display: flex;
     flex-wrap: wrap;
@@ -22,9 +22,11 @@ p,img {
 }
 
 main {
+ height: 100%;
  display: flex;
  flex-wrap: wrap;
- justify-content: space-evenly;
+ justify-content: flex-start;
+ background-color: lightgray;
 }
 
 /* Card styles */
@@ -44,6 +46,13 @@ main {
     padding: 10px;
     width: 300px;
     height: 300px;
+}
+
+.card article > p, h3 {
+    width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 article {

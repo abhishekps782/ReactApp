@@ -8,9 +8,10 @@ import teamData from "./appData";
 const rootElement = ReactDOM.createRoot(document.getElementById("root"));
 
 const CardContainer = ({filteredMembers}) => {
+  const cards = filteredMembers.map((cardData) => <CardComponent key={cardData.id} {...cardData}/>);
   return (
       <main>
-        {filteredMembers.map((cardData) => <CardComponent key={cardData.id} {...cardData}/>)}
+        {cards}
       </main> 
   )
 }

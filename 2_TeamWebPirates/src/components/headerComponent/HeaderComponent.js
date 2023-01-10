@@ -6,8 +6,8 @@ const HeaderComponent = ({setFilteredMembers}) => {
     const [searchText, setSearchText] = useState("");
 
     const handleSearch = (e) => {
+      filterTeamMembers(e.target.value);
       setSearchText(e.target.value);
-      filterTeamMembers(searchText);
     };
 
     const filterTeamMembers = (searchText) => {
