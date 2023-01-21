@@ -9,7 +9,8 @@ import IMAGES from "../utilities/image-exporter";
 		"organization": "Zinier",
 		"designation": "Senior Software Developer",
 		"linkedin": "https://www.linkedin.com/in/upaharika-gawali-578b73125",
-		"github": "https://github.com/upaharika"
+		"github": "https://github.com/upaharika",
+		"username": "upaharika",
 	},
 	{
 		"id": "2",
@@ -19,7 +20,8 @@ import IMAGES from "../utilities/image-exporter";
 		"organization": "Frappe Tech",
 		"designation": "Engineering Lead",
 		"linkedin": "https://www.linkedin.com/in/rucha-mahabal-4b0102187",
-		"github": "https://github.com/ruchamahabal"
+		"github": "https://github.com/ruchamahabal",
+		"username": "ruchamahabal"
 	},
 	{
 		"id": "3",
@@ -29,7 +31,8 @@ import IMAGES from "../utilities/image-exporter";
 		"organization": "myPaisaa",
 		"designation": "Software Engineer",
 		"linkedin": "https://www.linkedin.com/in/rishav-sah-b1966b190/",
-		"github": "https://github.com/rishav-sah"
+		"github": "https://github.com/rishav-sah",
+		"username": "rishav-sah"
 	},
 	{
 		"id": "4",	
@@ -39,7 +42,8 @@ import IMAGES from "../utilities/image-exporter";
 		"organization": "Deloitte USI",
 		"designation": "Software Engineer",
 		"linkedin": "https://www.linkedin.com/in/vinay-sai-211452212/",
-		"github": "https://github.com/vinaysaip"
+		"github": "https://github.com/vinaysaip",
+		"username": "vinaysaip"
 	},
 	{
 		"id": "5",
@@ -49,7 +53,8 @@ import IMAGES from "../utilities/image-exporter";
 		"organization": "Deloitte USI",
 		"designation": "Software Engineer",
 		"linkedin": "https://www.linkedin.com/in/pratik-mothe-40a418106/",
-		"github": "https://github.com/Pratik33"
+		"github": "https://github.com/Pratik33",
+		"username": "Pratik33"
 	},
 	{
 		"id": "6",
@@ -59,7 +64,8 @@ import IMAGES from "../utilities/image-exporter";
 		"organization": "Growth Natives",
 		"designation": "Software Engineer",
 		"linkedin": "https://www.linkedin.com/in/shubhamdsm",
-		"github": "https://github.com/shubhamyadav30"
+		"github": "https://github.com/shubhamyadav30",
+		"username": "shubhamyadav30"
 	},
 	{
 		"id": "7",
@@ -69,7 +75,8 @@ import IMAGES from "../utilities/image-exporter";
 		"organization": "Anika Media Pvt Ltd",
 		"designation": "Software Engineer",
 		"linkedin": "https://www.linkedin.com/in/shailendrasinghraikwar",
-		"github": "https://github.com/ShailendraSinghRaikwar"
+		"github": "https://github.com/ShailendraSinghRaikwar",
+		"username": "ShailendraSinghRaikwar"
 	},
 	{
 		"id": "8",
@@ -79,7 +86,8 @@ import IMAGES from "../utilities/image-exporter";
 		"organization": "SAPLabs",
 		"designation": "Senior Developer",
 		"linkedin": "https://www.linkedin.com/in/abhishekanand001",
-		"github": "https://github.com/abhishekps782"
+		"github": "https://github.com/abhishekps782",
+		"username": "abhishekps782"
 	},
 	{
 		"id": "9",
@@ -89,7 +97,8 @@ import IMAGES from "../utilities/image-exporter";
 		"organization": "Abeam Analytics",
 		"designation": "Senior Consultant",
 		"linkedin": "https://www.linkedin.com/in/mojahid-92605828",
-		"github": "https://github.com/mojahidhd"
+		"github": "https://github.com/mojahidhd",
+		"username": "mojahidhd"
 	},
 	{
 		"id": "10",
@@ -100,6 +109,7 @@ import IMAGES from "../utilities/image-exporter";
 		"designation": "Software Engineer",
 		"linkedin": "https://www.linkedin.com/in/taj-ahmad-shaik-49b641215",
 		"github": "https://github.com/taj0598",
+		"username": "taj0598",
 	}
 ]
 

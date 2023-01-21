@@ -1,18 +1,18 @@
 import IMAGES from "../../../utilities/image-exporter"
-const CardComponent = ({image, name, designation, organization, address, linkedin, github}) => {
+const CardComponent = ({avatar_url, name, login, bio, company, location, blog, html_url}) => {
     return (
       <section className="card">
-        <img src={image} alt="Default Image"></img>
+        <img src={avatar_url} alt="Default Image"></img>
         <article>
-          <h3>{name}</h3>
-          <p>{designation}</p>
-          <p>{organization}</p>
-          <p>{address}</p>
+          <h3>{name || login}</h3>
+          <p>{bio}</p>
+          <p>{company}</p>
+          <p>{location}</p>
           <p>
-            <a href={linkedin}>
+            <a href={blog}>
                <img src={IMAGES.linkedin} height="32px"></img>
             </a>
-            <a href={github}>
+            <a href={html_url}>
                <img src={IMAGES.github} height="32px"></img>
             </a>
           </p>

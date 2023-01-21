@@ -1,8 +1,8 @@
 import IMAGES from '../../../utilities/image-exporter';
 import { useState } from 'react';
-import teamData from '../../appData';
 
-const HeaderComponent = ({setFilteredMembers}) => {
+
+const HeaderComponent = ({membersList, setFilteredMembers}) => {
     const [searchText, setSearchText] = useState("");
 
     const handleSearch = (e) => {
@@ -12,10 +12,11 @@ const HeaderComponent = ({setFilteredMembers}) => {
 
     const filterTeamMembers = (searchText) => {
       setFilteredMembers(
-        teamData.filter(
+        membersList.filter(
           (member) =>
-            member.name.toLowerCase().includes(searchText.toLowerCase()) ||
-            member.designation.toLowerCase().includes(searchText.toLowerCase())
+            member?.name?.toLowerCase().includes(searchText.toLowerCase()) ||
+            member?.login?.toLowerCase().includes(searchText.toLowerCase()) ||
+            member?.company?.toLowerCase().includes(searchText.toLowerCase())
         )
       );
     };
