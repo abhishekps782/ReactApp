@@ -1,38 +1,40 @@
-import React, {useState, useEffect} from "react";
-import "../styles/style.css"
+import React, { useState, useEffect } from "react";
+import "../styles/style.css";
 import CardComponent from "./cardComponent/CardComponent";
 import HeaderComponent from "./headerComponent/HeaderComponent";
 import teamData from "../appData";
+import { Link } from "react-router-dom";
 
-const CardContainer = ({filteredMembers}) => {
-  console.log(filteredMembers)
+const CardContainer = ({ filteredMembers }) => {
 
-  const cards = filteredMembers.map((cardData) => <CardComponent key={cardData?.id} {...cardData}/>);
-  return (
-    <main>
-      {cards}
-    </main> 
-  )
-}
+  const cards = filteredMembers.map((cardData) => {
+    return (
+      <Link to={`memberDetails/${cardData?.id}`}>
+        <CardComponent key={cardData?.id} details={cardData} />
+      </Link>
+    );
+  });
 
-const MainContainer = () => {
+  return <main>{cards}</main>;
+};
+
+export const MainContainer = () => {
   const [membersList, setMembersList] = useState([]);
   const [filteredMembers, setFilteredMembers] = useState([]);
 
-  
   async function getUsers(teamData) {
     let membersList = [];
 
-    for(const member of teamData) {
-      let user = fetch(`https://api.github.com/membersList/${member.username}`).then(
-        data => {
+    for (const member of teamData) {
+      let user = fetch(`https://api.github.com/users/${member.username}`).then(
+        (data) => {
           if (data.status != 200) {
             return null;
           } else {
             return data.json();
           }
         },
-        error => {
+        (error) => {
           return null;
         }
       );
@@ -46,22 +48,25 @@ const MainContainer = () => {
 
   useEffect(() => {
     getUsers(teamData);
-  }, [])
-  
+  }, []);
+
   return (
     <>
-     <HeaderComponent membersList={membersList} setFilteredMembers={setFilteredMembers}/>
-     <CardContainer filteredMembers={filteredMembers}/>
+      <HeaderComponent
+        membersList={membersList}
+        setFilteredMembers={setFilteredMembers}
+      />
+      <CardContainer filteredMembers={filteredMembers} />
     </>
-  )
-}
+  );
+};
 
 const AppComponent = () => {
-    return (
-     <div className="main-container">
-        <MainContainer/>
-     </div>
-    )
-}
+  return (
+    <div className="main-container">
+      <MainContainer />
+    </div>
+  );
+};
 
 export default AppComponent;

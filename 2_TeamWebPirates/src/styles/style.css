@@ -87,7 +87,7 @@ header {
     font-size: 45px;
     font-family: Arial, Courier, monospace;
     padding:0 20px;
-    margin-left:auto;
+    /* margin-left:auto; */
 }
 
 .nav--search {
@@ -101,5 +101,17 @@ header {
 
 .nav--image {
     height: 50px;
+}
+
+.hidden {
+ display: none !important;
+}
+
+.aboutus__container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 85vh;
+ background-color: aliceblue;
 }
 

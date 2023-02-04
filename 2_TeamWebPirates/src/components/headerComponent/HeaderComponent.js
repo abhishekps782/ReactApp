@@ -2,7 +2,7 @@ import IMAGES from '../../../utilities/image-exporter';
 import { useState } from 'react';
 
 
-const HeaderComponent = ({membersList, setFilteredMembers}) => {
+const HeaderComponent = ({membersList, setFilteredMembers, hideSearchEle}) => {
     const [searchText, setSearchText] = useState("");
 
     const handleSearch = (e) => {
@@ -30,12 +30,16 @@ const HeaderComponent = ({membersList, setFilteredMembers}) => {
             src={IMAGES.teamLogo}
             alt="Web Pirates's Team Logo"
           />
-          <input
-            className="nav--search"
-            value={searchText}
-            placeholder="type something here.."
-            onChange={handleSearch}
+          {
+            !hideSearchEle && 
+            <input
+              className='nav--search'
+              value={searchText}
+              placeholder="type something here.."
+              onChange={handleSearch}
           />
+          }
+          
         </nav>
       </header>
     );
