@@ -1,0 +1,26 @@
+{
+  "name": "team-web-pirates",
+  "version": "1.0.0",
+  "description": "React Bootcamp creating your team app with members info",
+  "source": "src/index.html",
+  "browserslist": [
+    ">0.2%",
+    "not dead"
+  ],
+  "scripts": {
+    "start": "parcel --no-cache src/index.html --port 1234 --open && parcel watch src/index.html",
+    "build": "parcel build"
+  },
+  "author": "Abhishek Anand",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.8.0",
+    "react-router-dom": "^6.8.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.0",
+    "process": "^0.11.10"
+  }
+}
